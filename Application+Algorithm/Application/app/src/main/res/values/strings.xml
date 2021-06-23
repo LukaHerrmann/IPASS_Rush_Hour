@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Rush Hour</string>
+    <string name="game_rules">The goal of the game \'Rush Hour\' is to get the red car, which is represented here by a red
+        rectangle, all the way to the right side of the board where a red line can be seen, marking the space where the red
+        car needs to exit.
+    </string>
+    <string name="developer_info">This application was made by Luka Herrmann for a college project.</string>
+
+    <string-array name="placeholder">
+        <item>Temp</item>
+    </string-array>
+</resources>

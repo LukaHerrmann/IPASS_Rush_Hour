@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/makeGameScreen"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
+
+    <ImageView
+        android:id="@+id/rushHourBoard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/rushboardcut" />
+
+    <ImageView
+        android:id="@+id/autoWagenMake"
+        android:layout_width="60dp"
+        android:layout_height="125dp"
+        android:layout_marginLeft="5dp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@id/rushHourBoard"
+        app:layout_constraintTop_toTopOf="@id/rushHourBoard"
+        app:layout_constraintBottom_toBottomOf="@id/rushHourBoard"
+        app:srcCompat="@drawable/car_temp" />
+
+    <Button
+        android:id="@+id/newVehicleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Vehicle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/rushHourBoard"
+        app:layout_constraintStart_toStartOf="@id/rushHourBoard"
+        app:layout_constraintTop_toBottomOf="@id/rushHourBoard"
+        app:layout_constraintVertical_bias="0.318" />
+
+    <Button
+        android:id="@+id/playButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Play"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/rushHourBoard"
+        app:layout_constraintStart_toEndOf="@id/resetBut"
+        app:layout_constraintTop_toBottomOf="@+id/rushHourBoard"
+        app:layout_constraintVertical_bias="0.75" />
+
+    <Button
+        android:id="@+id/resetBut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/playButton"
+        app:layout_constraintStart_toStartOf="@id/rushHourBoard"
+        app:layout_constraintTop_toBottomOf="@id/rushHourBoard"
+        app:layout_constraintVertical_bias="0.75"/>
+
+    <!--    <TextView-->
+<!--        android:id="@+id/textCars"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginRight="25dp"-->
+<!--        android:text="Vehicle Type: "-->
+<!--        android:textSize="20sp"-->
+<!--        android:textStyle="bold"-->
+<!--        app:layout_constraintBottom_toBottomOf="@id/rushHourBoard"-->
+<!--        app:layout_constraintEnd_toStartOf="@+id/dropDownType"-->
+<!--        app:layout_constraintTop_toTopOf="@id/rushHourBoard"-->
+<!--        app:layout_constraintVertical_bias="0.9" />-->
+
+<!--    <Spinner-->
+<!--        android:id="@+id/dropDownType"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="8dp"-->
+<!--        android:spinnerMode="dropdown"-->
+<!--        app:layout_constraintBottom_toBottomOf="@id/rushHourBoard"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.5"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/rushHourBoard"-->
+<!--        app:layout_constraintVertical_bias="0.9" />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

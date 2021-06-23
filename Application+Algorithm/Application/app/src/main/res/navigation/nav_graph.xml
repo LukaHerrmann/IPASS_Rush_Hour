@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeScreen">
+
+    <action
+        android:id="@+id/go_to_home"
+        app:destination="@+id/homeScreen"/>
+
+    <fragment
+        android:id="@+id/homeScreen"
+        android:name="com.example.application.graphic.HomeScreen"
+        android:label="HomeScreen"
+        tools:layout="@layout/home_screen">
+        <action
+            android:id="@+id/action_home_to_game"
+            app:destination="@+id/newGameScreen"/>
+        <action
+            android:id="@+id/go_to_infoscreen"
+            app:destination="@id/infoScreen"/>
+        <action
+            android:id="@+id/go_to_savedgames"
+            app:destination="@id/savedGamesScreen"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/newGameScreen"
+        android:name="com.example.application.graphic.NewGameScreen"
+        android:label="NewGameScreen"
+        tools:layout="@layout/new_game_screen">
+        <action
+            android:id="@+id/go_to_choice"
+            app:destination="@id/selectAmountScreen"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/infoScreen"
+        android:name="com.example.application.graphic.InfoScreen"
+        android:label="InfoScreen"
+        tools:layout="@layout/info_screen">
+    </fragment>
+
+    <fragment
+        android:id="@+id/selectAmountScreen"
+        android:name="com.example.application.graphic.ChooseVehiclesScreen"
+        android:label="selectAmountScreen"
+        tools:layout="@layout/choose_vehicles_screen">
+    </fragment>
+
+    <fragment
+        android:id="@+id/savedGamesScreen"
+        android:name="com.example.application.graphic.SavedGamesScreen"
+        android:label="savedGamesScreen"
+        tools:layout="@layout/saved_games_screen">
+    </fragment>
+
+
+</navigation>
